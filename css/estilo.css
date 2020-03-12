@@ -1,0 +1,53 @@
+#home {
+	background: #ffc107;
+	color: white;
+}
+.caixa{
+	padding: 60px;
+	border-bottom:1px solid #d8d8d8;
+}
+footer{
+	padding: 30px;
+	background: #ffc107;
+}
+
+
+footer p a{
+	margin: 5px 15px !important;
+}
+#caixa-esq{
+	animation: esquera-para-direita;
+	animation-duration: 1s;
+}
+#caixa-dir{
+	animation-name: direita-para-esquerda;
+	animation-duration:1s;
+}
+.anime{
+	opacity: 0;
+	transform: translateX(-100%);
+	transform: 3s;
+}
+.anime-start{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+
+@keyframes esquera-para-direita{
+	from{
+		transform: translateX(-15%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes direita-para-esquerda{
+	from{
+		transform: translateX(10%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
