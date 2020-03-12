@@ -16,28 +16,58 @@ footer p a{
 	margin: 5px 15px !important;
 }
 #caixa-esq{
-	animation: esquera-para-direita;
-	animation-duration: 0.1s;
+	-webkit-animation: esquera-para-direita;
+	        animation: esquera-para-direita;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
 }
 #caixa-dir{
-	animation-name: direita-para-esquerda;
-	animation-duration: 0.1s;
+	-webkit-animation-name: direita-para-esquerda;
+	        animation-name: direita-para-esquerda;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+
+@-webkit-keyframes esquera-para-direita{
+	from{
+		-webkit-transform: translateX(-15%);
+		        transform: translateX(-15%);
+	}
+	to{
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
 }
 
 @keyframes esquera-para-direita{
 	from{
-		transform: translateX(-15%);
+		-webkit-transform: translateX(-15%);
+		        transform: translateX(-15%);
 	}
 	to{
-		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes direita-para-esquerda{
+	from{
+		-webkit-transform: translateX(10%);
+		        transform: translateX(10%);
+	}
+	to{
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
 	}
 }
 
 @keyframes direita-para-esquerda{
 	from{
-		transform: translateX(10%);
+		-webkit-transform: translateX(10%);
+		        transform: translateX(10%);
 	}
 	to{
-		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
 	}
 }
