@@ -17,22 +17,12 @@ footer p a{
 }
 #caixa-esq{
 	animation: esquera-para-direita;
-	animation-duration: 1s;
+	animation-duration: 0.1s;
 }
 #caixa-dir{
 	animation-name: direita-para-esquerda;
-	animation-duration:1s;
+	animation-duration: 0.1s;
 }
-.anime{
-	opacity: 0;
-	transform: translateX(-100%);
-	transform: 3s;
-}
-.anime-start{
-	opacity: 1;
-	transform: translateX(0);
-}
-
 
 @keyframes esquera-para-direita{
 	from{
